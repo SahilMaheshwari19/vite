@@ -1,2 +1,11 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+}
