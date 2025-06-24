@@ -13,8 +13,8 @@ const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
   return (
     <HashLink
       className={`${
-        selectedPage === lowerCasePage ? "text-red-400" : ""
-      } transition duration-500 hover:text-amber-300`}
+        selectedPage === lowerCasePage ? "text-primary-500" : ""
+      } transition duration-500 hover:text-primary-300`}
       smooth
       to={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
