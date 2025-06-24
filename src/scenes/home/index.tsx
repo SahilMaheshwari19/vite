@@ -28,11 +28,10 @@ const Home = ({ setSelectedPage }: Props) => {
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
-            <p className="text-primary-500">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-              ullam itaque id consequuntur quo dolores est assumenda suscipit,
-              incidunt magnam. Incidunt necessitatibus reiciendis debitis libero
-              corporis vero, deleniti est repellendus.
+            <p className="">
+              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
+              Studios to get the Body Shapes That you Dream of.. Get Your Dream
+              Body Now.
             </p>
           </div>
           {/* ACTIONS */}
