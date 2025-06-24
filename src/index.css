@@ -1,12 +1,35 @@
-@import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+/* tailwind.css (or your main CSS file) */
 @import "tailwindcss";
+/* Define your custom theme configuration using @theme */
+@theme {
+  /* Extend the default theme */
+  --font-family-dmsans: "DM Sans", sans-serif;
+  --font-family-montserrat: "Montserrat", sans-serif;
 
-html,
-body,
-#root,
-.app {
-  height: 100%;
-  width: 100%;
-  font-family: "DM Sans", sans-serif;
+  /* Custom colors */
+  --color-gray-20: #F8F4EB;
+  --color-gray-50: #EFE6E6;
+  --color-gray-100: #DFCCCC;
+  --color-gray-500: #5E0000;
+  --color-primary-100: #FFE1E0;
+  --color-primary-300: #FFA6A3;
+  --color-primary-500: #FF6B66;
+  --color-secondary-400: #FFCD5B;
+  --color-secondary-500: #FFC132;
+
+  /* Background Images */
+  --background-image-gradient-yellowred: linear-gradient(90deg, #FF616A 0%, #FFC837 100%);
+  --background-image-mobile-home: url('./assets/HomePageGraphic.png');
+
+  /* Content (utility variants for before/after) */
+  --content-evolvetext: url('./assets/EvolveText.png');
+  --content-abstractwaves: url('./assets/AbstractWaves.png');
+  --content-sparkles: url('./assets/Sparkles.png');
+  --content-circles: url('./assets/Circles.png');
+
+  /* Screens (Breakpoints) */
+  --screen-xs: 480px;
+  --screen-sm: 768px;
+  --screen-md: 1060px;
 }
+ 

@@ -28,7 +28,7 @@ const Home = ({ setSelectedPage }: Props) => {
                 <img alt="home-page-text" src={HomePageText} />
               </div>
             </div>
-            <p>
+            <p className="text-primary-500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
               ullam itaque id consequuntur quo dolores est assumenda suscipit,
               incidunt magnam. Incidunt necessitatibus reiciendis debitis libero
