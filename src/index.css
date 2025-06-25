@@ -28,8 +28,8 @@
   --content-circles: url('./assets/Circles.png');
 
   /* Screens (Breakpoints) */
-  --screen-xs: 480px;
-  --screen-sm: 768px;
-  --screen-md: 1060px;
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1060px;
 }
  
