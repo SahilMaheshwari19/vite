@@ -3,6 +3,7 @@ import "./App.css";
 import "./index.css";
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
+import Benefits from "@/scenes/benefits";
 import { SelectedPage } from "./shared/types";
 
 function App() {
@@ -20,11 +21,11 @@ function App() {
       if (window.scrollY !== 0) {
         setIsTopOfPage(false);
       }
-      window.addEventListener("scroll", handleScroll);
-      // UNMOUNTING THE FUNCTION TO AVOID ANY MEMORY LEAK OR BUGS
-      return () => window.removeEventListener("scroll", handleScroll);
     };
-  });
+    window.addEventListener("scroll", handleScroll);
+    // UNMOUNTING THE FUNCTION TO AVOID ANY MEMORY LEAK OR BUGS
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
@@ -35,6 +36,7 @@ function App() {
           setSelectedPage={setSelectedPage}
         />
         <Home setSelectedPage={setSelectedPage} />
+        <Benefits setSelectedPage={setSelectedPage} />
       </div>
     </>
   );
